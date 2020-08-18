@@ -1,0 +1,87 @@
+*, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Alata', sans-serif;
+    font-size: 62.5%;
+    background-color:beige;
+}
+
+.container {
+/* Just for dev */
+    height: 100vh;
+    max-width: 90%;
+    background-color:  #85dcb8;
+    margin-left: 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav {
+    width: 100%;
+    height: 10vh;
+    font-size: 2rem;
+    background-color:#E27D60;
+    color: #41B3A3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    flex-grow: 1;
+    margin-left: 1rem;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.listItems {
+    margin-right: 1rem;
+}
+
+.listLinks {
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+
+    font-size: 3rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #E27D60;
+    color: #41B3A3;
+    font-size: 1.25rem;
+
+
+    display: flex;
+    justify-content: space-between;
+}
+
+footer:first-child {
+    margin-left: 1rem;
+}
+
+footer:last-child {
+    margin-right: 1rem;
+}
