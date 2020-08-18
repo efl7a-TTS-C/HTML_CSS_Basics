@@ -70,6 +70,7 @@ a.listLinks {
 }
 
 .main {
+    min-height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -94,22 +95,34 @@ a.listLinks {
     justify-content: space-between;
 
     margin: 1rem 2rem;
+    font-size: 1rem;
 }
 
 .detailWindow {
     width: 30%;
+    max-height: 15rem;
     background-color: #3f497a;
     color: #fff5d7;
     padding: .2rem .5rem;
 }
 
 .detailWindow a {
-    color: inherit;
+    color: #ff5e6c;
+}
+
+.detailWindow p {
+    font-size: 1rem;;
+}
+
+.description {
+    text-overflow: ellipsis;
+    overflow: nowrap;
+    white-space: normal;
 }
 
 .contact {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 1.3rem;
     padding: .5rem 0;
 }
@@ -118,12 +131,8 @@ a.listLinks {
     text-decoration: none;
 }
 
-.contactInfo:first-child {
-    margin-left: 1rem;
-}
-
-.contactInfo:last-child {
-    margin-right: 1rem;
+.contactInfo {
+    margin: .5rem 1rem;
 }
 
 footer {
