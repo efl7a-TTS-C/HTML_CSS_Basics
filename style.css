@@ -3,17 +3,23 @@
     margin: 0;
 }
 
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+
 body {
+    box-sizing: border-box;
     font-family: 'Alata', sans-serif;
     font-size: 62.5%;
-    background-color:beige;
+    background-color: #ff5e6c;
+    color: #3f497a;
 }
 
 .container {
 /* Just for dev */
     height: 100vh;
     max-width: 90%;
-    background-color:  #85dcb8;
+    background-color:  #fff5d7;
     margin-left: 5%;
 
     display: flex;
@@ -25,8 +31,8 @@ body {
     width: 100%;
     height: 10vh;
     font-size: 2rem;
-    background-color:#E27D60;
-    color: #41B3A3;
+    background-color: #ff5e6c;
+    color:#3f497a;
 
     display: flex;
     justify-content: space-between;
@@ -42,7 +48,7 @@ body {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .listItems {
@@ -50,13 +56,20 @@ body {
 }
 
 .listLinks {
+    padding: .5rem;
+    text-decoration: none;
+    border-radius: 3rem;
+    background-color: #3f497a;
+    color: #fff5d7;
+}
+
+.listLinks:link, .listLinks:visited, .listLinks:active {
     text-decoration: none;
 }
 
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
 
@@ -66,22 +79,51 @@ body {
 .contact {
     display: flex;
     justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.contactInfo a {
+    text-decoration: none;
+}
+
+.contactInfo:first-child {
+    margin-left: 1rem;
+}
+
+.contactInfo:last-child {
+    margin-right: 1rem;
 }
 
 footer {
-    background-color: #E27D60;
-    color: #41B3A3;
+    background-color: #ff5e6c;
+    color:#3f497a;
     font-size: 1.25rem;
 
 
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-footer:first-child {
+.footerInfo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.info {
     margin-left: 1rem;
 }
 
-footer:last-child {
+.info a {
+    text-decoration: none;
+}
+
+.copyright {
     margin-right: 1rem;
+}
+
+.attribution {
+    font-size: 1rem;
+    align-self: center;
 }
