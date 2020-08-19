@@ -1,32 +1,33 @@
 const detailWindows = document.getElementsByClassName("detailWindow");
-const container = document.querySelector(".container");
 
-function popup (e) {
-    e.currentTarget.className = "detailWindow highlight";
-    e.currentTarget.childNodes[7].className = "open";
-    let closeOut = document.createElement("div");
-    closeOut.className = "closeOut";
-    closeOut.onclick = closePopup;
-    e.currentTarget.appendChild(closeOut);
-    e.currentTarget.onclick = null;
+function expandDetailWindow(e) {
+    switch (e.currentTarget.className) {
+        case "detailWindow highlight": 
+            e.currentTarget.className = "detailWindow";
+            e.currentTarget.childNodes[7].className = "description";
+            let element = document.querySelector("div.closeOut");
+            e.currentTarget.removeChild(element);
+            break;
+        
+        case "detailWindow":
+            e.currentTarget.className = "detailWindow highlight";
+            e.currentTarget.childNodes[7].className = "open";
+            let closeOut = document.createElement("div");
+            closeOut.className = "closeOut";
+            e.currentTarget.appendChild(closeOut);
+            break;
+        
+        default:
+            console.log("Error occurred")
+            break;
+    }
 }
 
-function closePopup (e) {
-    let parent = e.currentTarget.parentElement;
-    parent.className = "detailWindow";
-    parent.childNodes[7].className = "description";
-    parent.removeChild(e.currentTarget);
-    // resetOnClick(parent);
+function setEventListeners() {
+    for (let element in detailWindows) {
+        detailWindows[element].onclick = expandDetailWindow;
+    }
 }
 
-function resetOnClick(parent) {
-    console.log("in reset", parent);
-    parent.onclick = popup;
-}
-
-console.log(detailWindows);
-for (let element in detailWindows) {
-    detailWindows[element].onclick = popup;
-};
-
+setEventListeners();
 

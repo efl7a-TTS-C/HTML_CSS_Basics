@@ -76,6 +76,8 @@ a.listLinks {
     justify-content: flex-start;
     align-items: center;
     margin-top: 1rem;
+
+    position: relative;
 }
 
 .topics {
@@ -173,21 +175,28 @@ footer {
 
 .highlight {
     position: absolute;
-    width: 75%;
-    height: 75%;
+    width: 100%;
+    height: 100%;
     z-index: 100;
-    top: 10%;
-    left: 15%;
+    top: 0;
+    left: 0;
 
     border: 5rem solid #fff5d7;
 }
 
 .closeOut {
     position: absolute;
-    top: 1rem;
+    top: 0;
     right: 1rem;
-    background-color: orange;
-    width: 2rem;
-    height: 2rem;
-    z-index: 1000;;
+    /* width: 2rem;
+    height: 2rem; */
+    z-index: 1000;
+
+}
+
+.closeOut::after {
+    content: "\d7";
+    color: #fff5d7;
+    font-size: 3rem;
+    font-weight: 800;
 }
