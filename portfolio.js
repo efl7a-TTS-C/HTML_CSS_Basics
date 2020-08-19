@@ -4,14 +4,14 @@ function expandDetailWindow(e) {
     switch (e.currentTarget.className) {
         case "detailWindow highlight": 
             e.currentTarget.className = "detailWindow";
-            e.currentTarget.childNodes[7].className = "description";
+            e.currentTarget.childNodes[5].className = "description";
             let element = document.querySelector("div.closeOut");
             e.currentTarget.removeChild(element);
             break;
         
         case "detailWindow":
             e.currentTarget.className = "detailWindow highlight";
-            e.currentTarget.childNodes[7].className = "open";
+            e.currentTarget.childNodes[5].className = "open";
             let closeOut = document.createElement("div");
             closeOut.className = "closeOut";
             e.currentTarget.appendChild(closeOut);
