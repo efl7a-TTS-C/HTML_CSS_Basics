@@ -100,10 +100,10 @@ a.listLinks {
 
 .detailWindow {
     width: 30%;
-    max-height: 15rem;
     background-color: #3f497a;
     color: #fff5d7;
-    padding: .2rem .5rem;
+    padding: .5rem .5rem 1rem .5rem;
+    overflow: hidden;
 }
 
 .detailWindow a {
@@ -116,8 +116,9 @@ a.listLinks {
 
 .description {
     text-overflow: ellipsis;
-    overflow: nowrap;
-    white-space: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 1rem 1rem 2rem 1rem;
 }
 
 .contact {
@@ -168,4 +169,25 @@ footer {
 .attribution {
     font-size: 1rem;
     align-self: center;
+}
+
+.highlight {
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    z-index: 100;
+    top: 10%;
+    left: 15%;
+
+    border: 5rem solid #fff5d7;
+}
+
+.closeOut {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: orange;
+    width: 2rem;
+    height: 2rem;
+    z-index: 1000;;
 }
