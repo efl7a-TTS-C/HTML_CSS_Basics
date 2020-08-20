@@ -1,0 +1,38 @@
+
+var ftGUID_4196797="4607ABD42F8D96";
+var ftConfID_4196797="0";
+var ftParams_4196797="ftx=&fty=&ftadz=&ftscw=&ft_custom=&ftOBA=1&ft_ifb=1&ft_domain=www.w3schools.com&ft_agentEnv=0&ft_referrer=https%3A%2F%2Fwww.w3schools.com%2Fcharsets%2Ftryit.asp%3Fdeci%3D128222&ft_section=__79638425598950314613496477778449593433&cachebuster=584316.6049027013";
+var ftKeyword_4196797="";
+var ftCustom_4196797="";
+var ftSection_4196797="__79638425598950314613496477778449593433";
+var ftSegment_4196797="w2b";
+var ftSegmentList_4196797=[{s:'w2b'}];
+var ftRuleMatch_4196797="0";
+var ftTimestamp_4196797="1597945243";
+var ftGeoC2_4196797="us";
+var ftGeoState_4196797="nc";
+var ftGeoCity_4196797="charlotte";
+var ftISP_4196797="att internet services";
+var ftSpeed_4196797="xdsl";
+var ftDMA_4196797="517";
+var ftLong_4196797="-80.81";
+var ftLat_4196797="35.31";
+var ftPostal_4196797="28269";
+var ftTimeZone_4196797="-400";
+var ftMobileCarrier_4196797="";
+var ftImp4196797 = {};
+ftImp4196797.privacy = "x";
+ftImp4196797.guidAge = "8";
+ftImp4196797.impID = "43EF3393-3271-FC8A-FC5E-EE95B9EE49D3";
+ftImp4196797.duid = "FT:4607ABD42F8D96";
+
+ftImp4196797.ft_tpplid = "";
+ftImp4196797.ft_c = {};
+ftImp4196797.gdpr = "";
+ftImp4196797.gdpr_consent = "";
+ftImp4196797.gdpr_pd = "";
+ftImp4196797.oob_consent = "";
+ftImp4196797.gdprStoredConsent = "";
+ftImp4196797.us_privacy = "";
+
+document.write('<scr'+'ipt src="https://cdn.flashtalking.com/xre/419/4196797/2884239/js/j-4196797-2884239.js" id="ftscript_m4196797" name="ftscript_m4196797"></scr'+'ipt>');

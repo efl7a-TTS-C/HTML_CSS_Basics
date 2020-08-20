@@ -1,0 +1,193 @@
+*,
+*::after,
+*::before,
+html {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;    
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    font-size: 13px;
+}
+
+.main {
+    height: 600px;
+    width: 100%;
+    background-color: #fff;
+    font-size: 30px;
+    /* background-image: url("../asset/computer.jpg");
+    background-size: cover; */
+}
+.footer {
+    height: 150px;
+    width: 100%;
+    background-color: #000;
+}
+
+.buttonContainer {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.button {
+    padding-top: 1%;
+    height: 100%;
+    width: 24%;
+    display: inline-block;
+    background-color: red;
+}
+
+.footerContainer {
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footerButton {
+    display: inline-block;
+    color: #fff;
+    width: 24%;
+    font-size: 10px;
+}
+
+.seperator {
+    height: 100px;
+    width: 100%;
+}
+
+.TTSButtonContainer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.TTSButton {
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: orange;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.TTSButton i {
+    font-size: 15px;
+    margin: -2px 2px 0 0;
+}
+
+.homeworkNavBar {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 60px;
+    height: 100%;
+    background-color: red;
+    font-size: 25px;
+    padding-right: 5px;
+}
+
+.logo p {
+    padding: 15px 0 0 2px;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinksList {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navLinksItem {
+    margin: 0 15px;
+}
+
+.navLinksSearch {
+    display: flex;
+
+    background-color: white;
+}
+
+.searchInput {
+    border: none;
+}
+
+.searchSubmit {
+    background-color: red;
+    border: none;
+}
+
+.searchSubmit img {
+    width: 25px;
+    height: 25px;
+    padding: 6px 4px 4px 4px;
+    filter: invert(100%);
+}
+
+.navCustomerLinks {
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 10px;
+}
+
+.navCustomerLinksTop {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.customerLinkTop {
+    margin-right: 15px;
+}
+
+.customerLinkTop:last-child {
+    margin-right: 0;
+}
+
+.navCustomerLinksBottom a,
+.navCustomerLinksBottom a:visited,
+.navCustomerLinksBottom a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.navCustomerLinksBottom {
+    align-self: flex-end;
+}
+
+.customerLinkIcon {
+    filter: invert(1);
+    width: 25px;
+    height: 15px;
+}
+
+

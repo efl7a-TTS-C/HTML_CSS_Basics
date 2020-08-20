@@ -1,20 +1,80 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0" >
         <title>Hello World</title>
-        <link rel="stylesheet" href=".\css\indexStyle.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     </head>
     
     <body>
-        <section>
-            <div class="pic1"></div>
-        </section>
+        <div class="header">
+            <div class="buttonContainer">
+                <div class="button">Home</div>
+                <div class="button">About</div>
+                <div class="button">Location</div>
+                <div class="button">Contact</div>
+            </div>
+        </div>
 
-        <section></section>
+        <div class="main">
 
-        <section></section>
+            <div class="TTSButtonContainer">
+                <a class="TTSButton" href="#">
+                    <i class="em em-telephone_receiver" aria-role="presentation" aria-label="TELEPHONE RECEIVER"></i>
+                    Tech Talent South
+                </a>
+            </div>
 
-        <section></section>
+            <div class="seperator"></div>
+
+            <div class="homeworkNavBar">
+
+                <div class="navLinks">
+                    <div class="logo">
+                        <p>Logo</p>
+                    </div>
+                    <ul class="navLinksList">
+                        <li class="navLinksItem">Product</li>
+                        <li class="navLinksItem">Music</li>
+                        <li class="navLinksItem">Play</li>
+                        <li class="navLinksItem">Connect</li>
+                    </ul>
+                    <form action="" class="navLinksSearch">
+                        <input type="text" class="searchInput">
+                        <button type="submit" class="searchSubmit">
+                            <img alt="Submit" src="./asset/Search-icon.png">
+                        </button>
+                    </form>
+                </div>
+
+                <div class="navCustomerLinks">
+                    <div class="navCustomerLinksTop">
+                        <div class="customerLinkTop">Sign In</div>
+                        <div class="customerLinkTop">/</div>
+                        <div class="customerLinkTop"> Dealer Location</div>
+                    </div>
+                    <div class="navCustomerLinksBottom">
+                        <a href="#">
+                            View Cart 
+                            <img src="./asset/shopping-cart-icon.svg" alt="shopping cart" class="customerLinkIcon"> 
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="footerContainer">
+                <div class="footerButton">Home</div>
+                <div class="footerButton">About</div>
+                <div class="footerButton">Location</div>
+                <div class="footerButton">Contact</div>
+            </div>
+        </div>
     </body>
 
 </html>
