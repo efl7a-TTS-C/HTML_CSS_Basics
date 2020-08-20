@@ -1,0 +1,161 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "San Francisco", sans-serif;
+}
+
+.container {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    z-index: 100;
+
+    background-color: lightcoral;
+}
+
+nav ul {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.navItem {
+    align-self: center;
+}
+
+.announcement {
+    background-color: lightslategrey;
+    height: 3rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+.first-element {
+    margin-top: 3rem;
+    background-color: white;
+}
+
+.main-section {
+    width: 100%;
+    height: 80vh;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.headline {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.main-link {
+    text-decoration: none;
+}
+
+.main-link:link {
+    color: inherit;
+}
+
+.black-background {
+    background-color: black;
+    color: white;
+}
+
+.white-background {
+    background-color: white;
+    color: gray;
+}
+
+.sub-main-section {
+    display: flex;
+}
+
+.sub-main-section-1, .sub-main-section-2{
+    width: 50%;
+    height: 80vh;
+    text-align: center;
+    margin: .5rem;
+}
+
+.sub-main-section-1 a, .sub-main-section-2 a{
+    text-decoration: none;
+    font-size: 3rem;
+    color: gray;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+}
+
+.purple {
+    background-color: purple;
+}
+
+footer {
+    background-color: lightgray;
+    font-size: .8rem;
+    color: lightslategray;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer p {
+    margin: .4rem 1rem;
+}
+
+.footer-table {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-top: .1rem solid darkgray;
+    margin-top: .5rem;
+    padding-top: .5rem;
+}
+
+.footer-table_column {
+    width: 100%;
+    text-align: center;
+}
+
+.footer-table_header {
+    font-size: 1rem;
+}
+
+.footer-table_list {
+    list-style: none;
+}
+
+.footer-table_listItem {
+    margin: 1rem;
+}
