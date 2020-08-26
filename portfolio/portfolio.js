@@ -1,4 +1,5 @@
 const detailWindows = document.getElementsByClassName("detailWindow");
+const anchors = document.getElementsByTagName("a");
 
 function expandDetailWindow(e) {
     switch (e.currentTarget.className) {
@@ -23,11 +24,14 @@ function expandDetailWindow(e) {
     }
 }
 
-function setEventListeners() {
+function preparePage() {
     for (let element in detailWindows) {
         detailWindows[element].onclick = expandDetailWindow;
     }
+    for (let element in anchors) {
+        anchors[element].onclick = (e) => e.stopPropagation();
+    }
 }
 
-setEventListeners();
+preparePage();
 
